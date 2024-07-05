@@ -12,10 +12,16 @@ import {structureTool} from 'sanity/structure'
 import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
 
-export default defineConfig({
-  basePath: '/studio',
+console.log('Sanity Config:', {
   projectId,
   dataset,
+  apiVersion,
+});
+
+export default defineConfig({
+  basePath: '/studio',
+  projectId: projectId,
+  dataset: dataset,
   // Add and edit the content schema in the './sanity/schema' folder
   schema,
   plugins: [
