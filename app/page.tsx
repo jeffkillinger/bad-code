@@ -27,7 +27,7 @@ getContent().then(content => console.log(content))
 export default function Home() {
   return (
     <main>
-      <h2>How's it going in there?</h2>
+      <h2>Hows it going in there?</h2>
     </main>
   );
 } 
